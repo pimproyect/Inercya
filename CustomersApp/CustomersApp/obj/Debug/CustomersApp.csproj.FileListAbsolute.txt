@@ -1,0 +1,7 @@
+C:\Users\NVP&PIM\Source\repos\CustomersApp\CustomersApp\obj\Debug\CustomersApp.csprojAssemblyReference.cache
+C:\Users\NVP&PIM\Source\repos\CustomersApp\CustomersApp\obj\Debug\CustomersApp.csproj.CoreCompileInputs.cache
+C:\Users\NVP&PIM\Source\repos\CustomersApp\CustomersApp\bin\Debug\CustomersApp.exe.config
+C:\Users\NVP&PIM\Source\repos\CustomersApp\CustomersApp\bin\Debug\CustomersApp.exe
+C:\Users\NVP&PIM\Source\repos\CustomersApp\CustomersApp\bin\Debug\CustomersApp.pdb
+C:\Users\NVP&PIM\Source\repos\CustomersApp\CustomersApp\obj\Debug\CustomersApp.exe
+C:\Users\NVP&PIM\Source\repos\CustomersApp\CustomersApp\obj\Debug\CustomersApp.pdb

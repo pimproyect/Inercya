@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<script>
+    $(document).ready(function(){
+        $.getJSON( "http://127.0.0.1:8887/Items.json", function(data) {
+             //console.log( "success" );
+             console.log(data);
+             
+             $('#items').append('<ul id="uitems"></ul>');  
+                data.forEach(element => {
+                   
+                 hola(element,'uitems');   
+                 console.log("terminado")
+                });
+                
+             })
+             
+             .done(function() {
+                // console.log( "second success" );
+             })
+             .fail(function() {
+                console.log( "error" );
+             })
+             .always(function() {
+                console.log( "complete" );
+           });
+
+            function hola (element,padre){
+                if(padre != "uitems"){
+                     $('#u'+padre.replace(' ','').replace('.','')).append('<li id='+ element.Name.replace(' ','').replace('.','') +'>'+element .Name+'</li>');       
+                }else{
+                     $('#'+padre).append('<li id='+ element.Name.replace(' ','') .replace('.','')+'>'+element .Name+'</li>'); 
+                }
+                if(element.Children.length>0){
+                    // if(padre=="uitems"){
+                    //     $('#'+padre).append('<ul id="u'+ element.Name.replace(' ','').replace('.','')+'"></ul>');  
+                    //     console.log("creado u"+ element.Name.replace(' ','').replace('.','')+" en "+padre);
+                    // }else{
+                    //     $('#'+element.Name.replace(' ','') .replace('.','')).append('<ul id="u'+ element.Name.replace(' ','').replace('.','')+'"></ul>');  
+                    //     console.log("creado u"+ element.Name.replace(' ','').replace('.','')+" en "+element.Name.replace(' ','') .replace('.',''));
+                    // }
+                    $('#'+element.Name.replace(' ','') .replace('.','')).append('<ul id="u'+ element.Name.replace(' ','').replace('.','')+'"></ul>');  
+                    console.log("creado u"+ element.Name.replace(' ','').replace('.','')+" en "+element.Name.replace(' ','') .replace('.',''));
+                    console.log(document.getElementById("u"+element.Name.replace(' ','').replace('.','')));
+                    element.Children.forEach(hijo => {
+                        hola(hijo,element.Name.replace(' ','').replace('.',''));
+                    });
+                }
+           }
+    }); 
+</script>
+<body>
+    <div id="items">
+
+    </div>
+    <!-- <div>
+        <ul>
+            <li>
+                <span>Item 1</span>
+                <ul>
+                    <li>
+                        <span>Item 1.1</span>
+                        <ul>
+                            <li>
+                                <span>Item 1.1.1</span>
+
+                            </li>
+                            <li>
+                                <span>Item 1.1.2</span>
+
+                            </li>
+                            <li>
+                                <span>Item 1.1.3</span>
+
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <span>Item 1.2</span>
+                        <ul>
+                            <li>
+                                <span>Item 1.2.1</span>
+
+                            </li>
+                            <li>
+                                <span>Item 1.2.2</span>
+
+                            </li>
+                            <li>
+                                <span>Item 1.2.3</span>
+
+                            </li>
+                        </ul>
+
+                    </li>
+                </ul>
+
+            </li>
+            <li>
+                <span>Item 2</span>
+                <ul>
+                    <li>
+                        <span>Item 2.1</span>
+                        <ul>
+                            <li>
+                                <span>Item 2.1.1</span>
+
+                            </li>
+                            <li>
+                                <span>Item 2.1.2</span>
+
+                            </li>
+                            <li>
+                                <span>Item 2.1.3</span>
+
+                            </li>
+                        </ul>
+
+                    </li>
+                </ul>
+
+            </li>
+        </ul>
+
+    </div> -->
+</body>
+</html>
+

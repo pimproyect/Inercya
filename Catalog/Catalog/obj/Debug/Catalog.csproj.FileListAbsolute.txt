@@ -1,0 +1,10 @@
+C:\Users\NVP&PIM\Source\repos\Catalog\Catalog\bin\Debug\Catalog.exe.config
+C:\Users\NVP&PIM\Source\repos\Catalog\Catalog\bin\Debug\Catalog.exe
+C:\Users\NVP&PIM\Source\repos\Catalog\Catalog\bin\Debug\Catalog.pdb
+C:\Users\NVP&PIM\Source\repos\Catalog\Catalog\obj\Debug\Catalog.csprojAssemblyReference.cache
+C:\Users\NVP&PIM\Source\repos\Catalog\Catalog\obj\Debug\Catalog.csproj.CoreCompileInputs.cache
+C:\Users\NVP&PIM\Source\repos\Catalog\Catalog\obj\Debug\Catalog.exe
+C:\Users\NVP&PIM\Source\repos\Catalog\Catalog\obj\Debug\Catalog.pdb
+C:\Users\NVP&PIM\Source\repos\Catalog\Catalog\bin\Debug\Newtonsoft.Json.dll
+C:\Users\NVP&PIM\Source\repos\Catalog\Catalog\bin\Debug\Newtonsoft.Json.xml
+C:\Users\NVP&PIM\Source\repos\Catalog\Catalog\obj\Debug\Catalog.csproj.CopyComplete
